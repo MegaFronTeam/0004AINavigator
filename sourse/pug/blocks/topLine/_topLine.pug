@@ -2,8 +2,26 @@ mixin topLine()
 	// start topLine
 	+b.topLine.section#topLine&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 topLine
-				
-			.row
+			+e.row.row
+				.col-auto
+					a(href="#") 
+						+img('logo.png')
+				.col-auto
+					+b.support
+						span Меры поддержки
+						+e.wrap
+							a(href="#") Меры поддержки малых и&nbsp;средних предприятий
+							a(href="#") Меры поддержки разработчиков
+							a(href="#") Меры по&nbsp;внедрению ИИ-технологий
+							a(href="#") Образовательные меры поддержки
+				.col-auto
+					+img('top-nav-1.png')
+				.col-auto
+					+img('top-nav-2.png')
+				.col-auto
+					+img('top-nav-3.png')
+				.col-auto
+					+img('top-nav-4.png')
+				.col-auto
+					+soc()
 	// end topLine

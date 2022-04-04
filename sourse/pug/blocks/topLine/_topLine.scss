@@ -1,7 +1,60 @@
-
 	// start .topLine
 	.topLine {
-		 
+	padding-top: rem(35.2);
+	padding-bottom: rem(34.8);
+	border-bottom: 1px solid $gray-500;
+	&__row {
+		--bs-gutter-x: #{rem(67)};
+	}
+	.support {
+		&:hover {
+			--sub-mnu-scale: 1;
+
+		}
+		span {
+			background-color: $blue;
+			color: $white;
+			padding: rem(8.900) rem(16) rem(5.300);
+			font-size: rem(18);
+			font-weight: 700;
+			border-radius: rem(8);
+			display: block;
+			letter-spacing: 0.04em;
+		}
+		&__wrap {
+			@include mt;
+			position: absolute;
+			display: flex;
+			flex-direction: column;
+			border-radius: 8px;
+			background-color: $white;
+			top: rem(85);
+			transform: scaleY(var(--sub-mnu-scale, 0));
+			transform-origin: top;
+			z-index: 10;
+			box-shadow: 0px 4px 41px rgba(207, 221, 233, 0.74);
+			a {
+				color: $gray-900;
+				font-weight: 800;
+				font-size: rem(16);
+				line-height: 1.30em;
+				padding: rem(10.5) rem(16) rem(8.5) rem(16);
+				&:hover {
+					background-color: $cyan;
+				}
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 195px;
+				height: 40px;
+				background-color: transparent;
+				top: -20px;
+				left: 0;
+			}
+		}
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}
