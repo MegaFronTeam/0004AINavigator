@@ -2,8 +2,18 @@ mixin footer()
 	+b.FOOTER.footer
 		.container
 			.row
-				.col
-					
-				.col Footer
-				.col
-				.col-auto
+				.col-lg-6
+					h3 Поделитесь информацией в&nbsp;социальных сетях.
+					+e.P.text Расскажите о&nbsp;развитии отечественного искусственного&nbsp;интеллекта
+			.row
+				.col-lg-3
+					+soc()
+						+item-sos()
+							+img(src="../img/svg/vk-icon.svg", alt="")
+						+item-sos()
+							+img(src="../img/svg/ok-icon.svg", alt="")
+						+item-sos()
+							+img(src="../img/svg/tg-icon.svg", alt="")
+				.col-auto.ml-auto
+					+governmentList()
+			+e.row.row

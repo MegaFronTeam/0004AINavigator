@@ -77,3 +77,26 @@
 		}
 	}
 }
+
+
+.government {
+	display: flex;
+	list-style-type: none;
+	margin-bottom: 0;
+	@include roww(27px, m);
+	margin-left: rem(15);
+	flex-wrap: wrap;
+	@include media-breakpoint-down(md) {
+		justify-content: center;
+		margin-top: calc(var(--bs-gutter-x) * -1);
+	}
+	li {
+		@include media-breakpoint-down(md) {
+			margin-top: var(--bs-gutter-x);
+		}
+	}
+}
+
+.ml-auto {
+	margin-left: auto;
+}

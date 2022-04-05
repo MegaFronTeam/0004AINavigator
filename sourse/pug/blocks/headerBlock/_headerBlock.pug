@@ -2,9 +2,32 @@ mixin headerBlock()
 	// start headerBlock
 	+b.headerBlock.section#headerBlock&attributes(attributes)
 		.container
-			+b.section-title.text-center
-				h2 headerBlock ds dfsdfdsfsd
-
 			.row
-						
+				.col-lg-8
+					h1 Меры развития российского искусственного интеллекта 2022
+				.col-lg-4
+					+e.wrap
+						+e.line
+							+img('survey.png')
+							h4 Опрос
+						p Необходимые меры поддержки доступности вычислительных ресурсов для&nbsp;ИИ
+						button.btn Пройти
+			ul
+				mixin list-item(num, text, numColor)
+					li
+						span(style=`--numColor: ${numColor}`)!= num
+						+e.P.text!= text
+				+list-item('300', 'команд разработчиков в сфере&nbsp;ИИ получили государственную поддержку', '#204990')
+				+list-item('40+', 'исследовательских проектов запущено в&nbsp;сфере&nbsp;ИИ', '#204990')
+				+list-item('50', 'образовательных программ в&nbsp;сфере&nbsp;ИИ реализовано', '#FF5C00')
+				+list-item('7000+', 'бюджетных мест по&nbsp;ИИ-специальностям открыто в&nbsp;российских университетах', '#FF5C00')
+				li
+					+e.P.num(style=`--numColor: #18B76A`) 8,7
+						span млрд. ₽
+					+e.P.text бюджет Федерального проекта &laquo;Искусственный интеллект&raquo; на&nbsp;2022&nbsp;г
+			+e.linkWrap
+				a(href="#")
+					+icon('telegram-stroke')
+					| Подробнее в телеграм канале
+				button Предложить меру
 	// end headerBlock

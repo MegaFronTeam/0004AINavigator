@@ -11,6 +11,7 @@ include ../blocks/sContact/_sContact.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
+include ../blocks/sNumberCompanies/_sNumberCompanies.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -27,18 +28,7 @@ block pagecontent
 	+topLine
 	+header()
 	+headerBlock
-
-	+soc()
-	+sForm()
-	//- +sForm()
-	//- - let list = items[0].title
-	//- p= list
-	.container
-		each item in items
-			li 
-				h2= item.title
-				p= item.text
-	//- +sContact()
+	+sNumberCompanies
 	
 	+footer()
       
