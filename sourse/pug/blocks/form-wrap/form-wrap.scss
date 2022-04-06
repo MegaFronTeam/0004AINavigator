@@ -1,12 +1,23 @@
 .form-wrap{
  	&__input-wrap{
-			// @extend .form-group;
-			
-		}
-		&__input{
-			// @extend .form-control;
+		// @extend .form-group;
+		background-color: $gray-400;
+		padding: rem(10s);
+	}
+	span {
+		margin-left: rem(11.200);
+	}
+	&__input{
+		// @extend .form-control;
 		//  outline: 0 !important;
-		 resize: none;
+		resize: none;
+		border: none;
+		background-color: transparent;
+		&::placeholder {
+			font-weight: 600;
+			font-size: rem(16);
+			letter-spacing: 0.04em;
+		}
  	}
  	&__btn{
  		cursor: pointer;

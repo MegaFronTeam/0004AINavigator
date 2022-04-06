@@ -1,7 +1,7 @@
 // start .sNumberCompanies
 .sNumberCompanies {
 	--sPT: 0;
-	--sPB: #{rem(88.400)};
+	--sPB: #{rem(74)};
 	// --sTPB: #{rem()};
 	// position: relative;
 	&__row{
@@ -20,7 +20,7 @@
 	}
 	&__wrap {
 		position: relative;
-		margin-bottom: rem(78);
+		margin-bottom: rem(97.200);
 	}
 	span {
 		font-family: 'Mont-Bold';
@@ -37,36 +37,36 @@
 			font-size: rem(35.6154px);
 		}
 		&:nth-child(1) {
-			bottom: 26.2%;
-   		left: 6.1%;
+			bottom: 25.5%;
+			left: 5.9%;
 		}
 		&:nth-child(2) {
-			bottom: 35.8%;
-			left: 6.9%;
+			bottom: 35%;
+			left: 6.7%;
 		}
 		&:nth-child(3) {
-			bottom: 52.9%;
-			left: 11.3%;
+			bottom: 52.2%;
+			left: 11%;
 		}
 		&:nth-child(4) {
-			bottom: 40.8%;
-			left: 19.5%;
+			bottom: 40%;
+			left: 19.3%;
 		}
 		&:nth-child(5) {
-			left: 21.9%;
-			top: 30.6%;
+			left: 21.7%;
+			top: 31.2%;
 		}
 		&:nth-child(6) {
-			bottom: 41.8%;
-			left: 34.5%;
+			bottom: 41.1%;
+			left: 34.3%;
 		}
 		&:nth-child(7) {
-			bottom: 30.6%;
+			bottom: 29.8%;
 			right: 46.3%;
 		}
 		&:nth-child(8) {
-			right: 23.5%;
-			top: 44.5%;
+			right: 23.3%;
+			top: 45.3%;
 		}
 	}
 	&__numbers {
@@ -84,19 +84,22 @@
 				bottom: -6.9%;
 			}
 			@include media-breakpoint-up(lg) {
-				bottom: 10.1%;
-				left: 14.7%;
+				bottom: 9.2%;
+				left: 14.4%;
 			}
 		}
 	}
 	&__banner {
 		background: #3D84FF;
 		border-radius: 8px;
+		padding: rem(46.5) 0;
 		p {
 			font-family: 'HeliosUltraCompressed';
 			font-size: rem(75);
 			line-height: 1.20em;
 			color: $white;
+			margin-bottom: 0;
+			text-align: center;
 		}
 	}
 	@include media-breakpoint-up(xl) {}

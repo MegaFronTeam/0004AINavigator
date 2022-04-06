@@ -1,0 +1,63 @@
+// start .sSurveyBlock
+.sSurveyBlock {
+	--sPT: #{rem(25)};
+	--sPB: #{rem(40)};
+	// --sTPB: #{rem()};
+	@include media-breakpoint-up(lg) {
+		--sPT: #{rem(56)};
+		--sPB: #{rem(80.400)};
+	}
+	&__row{
+		--bs-gutter-x: #{rem(32)};
+		--bs-gutter-y: #{rem(33)};
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__wrap{
+		padding-bottom: rem(26);
+		box-shadow: 0px 4px 41px rgba(207, 221, 233, 0.74);
+		border-radius: 8px;
+		img {
+			border-radius: rem(8);
+			margin-bottom: rem(20);
+		}
+		h5 {
+			padding-left: rem(26);
+			line-height: 1.40em;
+			margin-bottom: rem(62);
+		}
+		a {
+			display: block;
+			background-color: rgba(175, 217, 255, 0.3);
+			border-radius: 8px;
+			color: $primary;
+			text-align: center;
+			letter-spacing: 0.04em;
+			font-size: rem(18);
+			line-height: 1.17em;
+			font-weight: 600;
+			padding-top: rem(19);
+			padding-bottom: rem(15);
+			margin-left: rem(26);
+			margin-right: rem(26);
+			&:hover {
+				background-color: rgba(175, 217, 255, 1);
+			}
+		}
+	}
+	h1 {
+		color: #204991;
+		margin-bottom: rem(57);
+	}
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sSurveyBlock

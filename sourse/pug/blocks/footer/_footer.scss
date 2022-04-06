@@ -11,13 +11,59 @@
 		font-size: rem(20);
 		color: $gray-900;
 		line-height: 1.60em;
-		margin-bottom: rem(56);
+		margin-bottom: rem(30);
+		@include media-breakpoint-up(lg) {
+			margin-bottom: rem(56);
+		}
 	}
 	.soc {
 		--bs-gutter-x: 34px;
+		margin-bottom: rem(25);
+		justify-content: center;
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+			margin-bottom: 0;
+		}
+	}
+	.government {
+		margin-left: 0;
 	}
 	&__row {
 		border-top: 1px solid $gray-500;
+		margin-top: rem(56);
+		padding-top: rem(25);
+		p {
+			font-size: rem(12);
+			color: $gray-900;
+			margin-bottom: rem(15);
+			@include media-breakpoint-up(lg) {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			@include mt;
+			text-decoration: underline;
+			font-size: rem(12);
+			color: $gray-900;
+			&:hover {
+				text-decoration-color: transparent;
+			}
+		}
+	}
+	&__col {
+		@include media-breakpoint-up(lg) {
+			text-align: right;
+		}
+		a {
+			margin-right: rem(26);
+		}
+	}
+	&__gov-col {
+		margin-left: auto;
+		margin-right: auto;
+		@include media-breakpoint-up(lg) {
+			margin-right: unset;
+		}
 	}
 // 
 @include media-breakpoint-up(xl) {}

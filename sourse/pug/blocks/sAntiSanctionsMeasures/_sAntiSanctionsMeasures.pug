@@ -1,0 +1,19 @@
+mixin sAntiSanctionsMeasures(data)
+	// start sAntiSanctionsMeasures
+	+b.SECTION.sAntiSanctionsMeasures.section#sAntiSanctionsMeasures&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Антисанкционные меры
+			+e.row.row
+				mixin cardItem(span, title, img, cardColor, cardBg)
+					.col-sm-6.col-lg-3
+						+e.item
+							span(style=`--cardColor: ${cardColor}; --cardBg: ${cardBg}`)!= span
+							h6!= title
+							+img(`${img}`, 'bg')
+							a(href="#") Подробнее
+				+cardItem('Меры поддержки', 'Меры поддержки малых и&nbsp;средних предприятий', 'antiSanctions-img-1.png', '#18B76A', '#9EF0C9')
+				+cardItem('Разработчики', 'Меры поддержки разработчиков', 'antiSanctions-img-2.png', '#B78818', '#F0D89E')
+				+cardItem('Внедрение ИИ', 'Меры по&nbsp;внедрению ИИ-технологий', 'antiSanctions-img-3.png', '#7518B7', '#CE9EF0')
+				+cardItem('Образовательные меры', 'Образовательные меры поддержки', 'antiSanctions-img-4.png', '#18A1B7', '#9EE5F0')
+	// end sAntiSanctionsMeasures

@@ -1,0 +1,14 @@
+mixin sMeasuresToSupportBlock(data)
+	// start sMeasuresToSupportBlock
+	+b.SECTION.sMeasuresToSupportBlock.section#sMeasuresToSupportBlock&attributes(attributes)
+		.container
+			h1 Меры поддержки малых и средних предприятий
+			+e.row.row
+				- for(i=0; i<9; i++)
+					.col-sm-6.col-lg-4
+						+e.wrap
+							span Малые и средние предприятия
+							h5 Заголовок для меры поддержки
+							+img('support-img-1.png')
+							a(href="#") Подробнее
+	// end sMeasuresToSupportBlock

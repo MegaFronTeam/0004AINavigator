@@ -12,6 +12,8 @@ include ../blocks/sForm/_sForm.pug
 include ../blocks/sForm/_sForm.pug
 include ../blocks/footer/_footer.pug
 include ../blocks/sNumberCompanies/_sNumberCompanies.pug
+include ../blocks/sSliderBlock/_sSliderBlock.pug
+include ../blocks/sAntiSanctionsMeasures/_sAntiSanctionsMeasures.pug
 
 block variables
 	- let  mainPage= 'main-page' 
@@ -29,7 +31,10 @@ block pagecontent
 	+header()
 	+headerBlock
 	+sNumberCompanies
-	
+	+sSliderBlock
+	+sAntiSanctionsMeasures
+	+sForm
+
 	+footer()
       
 

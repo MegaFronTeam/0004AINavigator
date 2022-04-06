@@ -16,7 +16,7 @@
 		background-color: #204991;
 		border-radius: 8px;
 		margin-top: rem(18);
-		padding: rem(18.2) rem(28) rem(22.2) rem(28);
+		padding: rem(18.2) rem(21.6) rem(22.2) rem(29.6);
 		h4 {
 			color: $white;
 			margin-bottom: 0;
@@ -59,8 +59,8 @@
 			gap: 15px;
 		}
 		@include media-breakpoint-up(lg) {
-			margin-top: rem(68);
-			margin-bottom: rem(67);
+			margin-top: rem(63.200);
+			margin-bottom: rem(46.200);
 		}
 		li {
 			max-width: rem(200);
@@ -69,7 +69,8 @@
 			color: var(--numColor);
 			font-weight: 800;
 			font-size: rem(40);
-			margin-bottom: rem(11);
+			margin-bottom: rem(7.8);
+			display: block;
 		}
 		p {
 			
@@ -111,8 +112,8 @@
 			font-size: rem(18);
 			margin-bottom: rem(24);
 			@include media-breakpoint-up(lg) {
-				width: 30%;
-				margin-right: rem(24);
+				width: 28.2%;
+				margin-right: rem(22.8);
 				margin-bottom: 0;
 			}
 			@include media-breakpoint-down(sm) {

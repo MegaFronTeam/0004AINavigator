@@ -299,42 +299,46 @@ ul {
 }
 
 .swiper-button-hand {
-	width: var(--swiperArrowSize);
-	height: var(--swiperArrowSize);
-	border-radius: 50%;
-	background-color: var(--swiperBgDef);
-	border: 2px solid var(--swiperBorderColorDef);
-	color: var(--swiperColorDef);
+	// width: var(--swiperArrowSize);
+	// height: var(--swiperArrowSize);
+	// border-radius: 50%;
+	// background-color: var(--swiperBgDef);
+	// border: 2px solid var(--swiperBorderColorDef);
+	color: $black;
 	@include bgs;
 	z-index: 300;
 	outline: none !important;
 	// margin-bottom: 0;
 	background-image: none;
 	margin: 0;
-	@include a-cent(y);
+	// @include a-cent(y);
 	box-shadow: 0 15px 60px rgba(0, 0, 0, 0.1);
 	@include mt;
 	user-select: none;
 
 	&:hover {
-		background-color: var(--swiperBgDefHover);
-		border-color: var(--swiperBorderColorDefHover);
+		background-color: transparent;
+		// border-color: var(--swiperBorderColorDefHover);
 		color: var(--swiperColorDefHover);
 	}
 
 	.icon {
 		font-size: rem(12);
+		fill: none;
+		stroke: currentColor;
+		font-size: rem(48);
+		stroke-width: 2px;
 	}
 
 	&::after {
 		display: none;
 	} 
 	&-next {
-		right: var(--swiperArrowPosition);
+		right: rem(-63);
 	}
 
 	&-prev {
-		left: var(--swiperArrowPosition);
+		left: rem(-63);
 	}
 }
 
@@ -347,17 +351,20 @@ ul {
 		width: 8px;
 		height: 8px;
 		border-radius: 50%;
-		background-color: #E6E6E6;
+		background-color: #C4C4C4;
 		outline: none !important;
 		@include mt;
-		margin-left: rem(8);
+		margin-left: rem(25);
 		// padding-right: rem(8);
 		margin-right: rem(5);
 		display: inline-block;
+		vertical-align: middle;
 
 		&-active,
 		&:hover {
-			background-color: var(--bs-primary) ;
+			width: rem(13);
+			height: rem(13);
+			background-color: #FF5C00 ;
 		}
 	}
 }

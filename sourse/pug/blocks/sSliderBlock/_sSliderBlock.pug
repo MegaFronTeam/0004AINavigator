@@ -1,0 +1,25 @@
+mixin sSliderBlock(data)
+	// start sSliderBlock
+	+b.SECTION.sSliderBlock.section#sSliderBlock&attributes(attributes)
+		.container
+			+b.section-title
+				h2 Лидеры о&nbsp;развитии искусственного интеллекта
+			+e.slider--js.swiper
+				.swiper-wrapper
+					mixin slide(num, title, name, text)
+						+e.slide.swiper-slide(href="#")
+							+e.img-wrap
+								+img(`sliderBlock-img-${num}.jpg`, 'bg')
+								+e.play
+									span
+							+e.text-wrap
+								h5!= title
+								h6!= name
+								p!= text
+					- for(i=0; i<2; i++)
+						+slide(1, 'Интервью с&nbsp;Александром Крайновым о&nbsp;возможностях&nbsp;ИИ в&nbsp;новой России', 'Александр Крайнов', 'Директор по&nbsp;развитию технологий искусственного интеллекта')
+						+slide(2, 'Другой заголовок для интервью с&nbsp;тематикой данного разговора в&nbsp;три строки', 'Александр Крайнов', 'Директор по&nbsp;развитию технологий искусственного интеллекта')
+						+slide(3, 'Интервью с&nbsp;Александром Крайновым о&nbsp;возможностях&nbsp;ИИ в&nbsp;новой России', 'Александр Крайнов', 'Директор по&nbsp;развитию технологий искусственного интеллекта')
+				+arrow()
+				.swiper-pagination
+	// end sSliderBlock

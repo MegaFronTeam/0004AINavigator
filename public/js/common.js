@@ -363,6 +363,32 @@ function eventHandler() {
 	});
 	// modal window
 
+	var headerBlockswiper = new Swiper(".sSliderBlock__slider--js", {
+		loop: true,
+		spaceBetween: 32,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true
+		},
+		breakpoints: {
+			// 640: {
+			// 	slidesPerView: 2,
+			// },
+			768: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+		},
+	});
+
+
 };
 if (document.readyState !== 'loading') {
 	eventHandler();
