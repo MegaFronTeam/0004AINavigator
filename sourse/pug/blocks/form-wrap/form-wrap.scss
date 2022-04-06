@@ -2,10 +2,12 @@
  	&__input-wrap{
 		// @extend .form-group;
 		background-color: $gray-400;
-		padding: rem(10s);
+		padding: rem(10);
+		border-radius: 8px;
 	}
 	span {
 		margin-left: rem(11.200);
+		font-size: rem(14);
 	}
 	&__input{
 		// @extend .form-control;
@@ -14,9 +16,10 @@
 		border: none;
 		background-color: transparent;
 		&::placeholder {
-			font-weight: 600;
+			font-weight: 400;
 			font-size: rem(16);
 			letter-spacing: 0.04em;
+			color: #A7A7AB;
 		}
  	}
  	&__btn{

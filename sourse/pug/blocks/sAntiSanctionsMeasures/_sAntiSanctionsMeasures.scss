@@ -26,7 +26,7 @@
 		padding: rem(17.6) rem(16) rem(19.2) rem(16);
 		display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     height: 100%;
 		span {
 			color: var(--cardColor);
@@ -49,13 +49,16 @@
 		a {
 			display: block;
 			width: 100%;
-			background: rgba(175, 217, 255, 0.3);
+			background-color: rgba(175, 217, 255, 0.3);
 			border-radius: 8px;
 			color: $primary;
 			text-align: center;
 			font-weight: 600;
 			padding: rem(12.5) rem(10) rem(13.926);
 			letter-spacing: 0.04em;
+			&:hover {
+				background-color: rgba(175, 217, 255, 1);
+			}
 		}
 	}
 
