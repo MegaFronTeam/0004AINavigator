@@ -289,7 +289,7 @@ function eventHandler() {
 	JSCCommon.modalCall();
 	// JSCCommon.tabscostume('tabs');
 	JSCCommon.mobileMenu();
-	// JSCCommon.inputMask();
+	JSCCommon.inputMask();
 	// JSCCommon.sendForm();
 	JSCCommon.heightwindow();
 	JSCCommon.makeDDGroup();
@@ -388,7 +388,30 @@ function eventHandler() {
 		},
 	});
 
-
+	var faqFooterSlider = new Swiper(".faq-footer__slider--js", {
+		loop: true,
+		spaceBetween: 31.75,
+		slidesPerView: 1,
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true
+		},
+		breakpoints: {
+			// 640: {
+			// 	slidesPerView: 2,
+			// },
+			768: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+		},
+	});
 };
 if (document.readyState !== 'loading') {
 	eventHandler();

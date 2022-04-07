@@ -1,0 +1,51 @@
+mixin sQwiz(data)
+	// start sQwiz
+	+b.SECTION.sQwiz.section#sQwiz&attributes(attributes)
+		.container
+			+e.back(href="#")
+				+icon('arrow-left')
+			h1 Необходимые меры поддержки доступности вычислительных ресурсов для&nbsp;ИИ
+			.row
+				.col-lg-8
+					+form-wrap
+						+e.input-wrap
+							+e.P.input-title 1. Что преимущественно вы&nbsp;используете при разработке проектов в&nbsp;сфере&nbsp;ИИ:
+							+in-c("radio", "Собственные аппаратные средства", "talk" )
+							+in-c("radio", "Облачные решения", "talk" )
+						+e.input-wrap
+							+e.P.input-title 2.	Если вы&nbsp;используете иностранные облачные решения в&nbsp;сфере разработки&nbsp;ИИ, то&nbsp;какие именно?
+							+e.wrap
+								.row
+									.col-6
+										+in-c("checkbox", "Amazon")
+									.col-6
+										+in-c("checkbox", "Microsoft")
+									.col-6
+										+in-c("checkbox", "Google")
+									.col-6
+										+in-c("checkbox", "Другое")
+						+e.input-wrap
+							+e.P.input-title 3.	Используете&nbsp;ли вы&nbsp;отечественные облачные решения?
+							+e.wrap
+								.row
+									.col-6
+										+in-c("radio", "Яндекс")
+									.col-6
+										+in-c("radio", "Сбербанк")
+									.col-6
+										+in-c("radio", "VK (Mail.ru Group)")
+									.col-6
+										+in-c("radio", "Другое")
+						+input('Введите ваш вариант', 'textarea')
+						+e.input-wrap
+							+e.P.input-title 4. Оптимизированы&nbsp;ли облачные сервисы (модели нейросетей, инструменты и&nbsp;т.д.) под ваши задачи в&nbsp;данный момент? Если нет, то&nbsp;что нужно для оптимизации?
+							+input('Введите ваш вариант', 'textarea')
+						+e.input-wrap
+							+e.P.input-title 5. Опишите параметры используемых Вами облачных средств (GPU, размер RAM на&nbsp;GPU, стоимость, др.), которыми обладаете, которые необходимы для решения текущих задач, потребности в&nbsp;вычислительных мощностях через 1-2&nbsp;года:
+							+input('Введите ваш вариант', 'textarea')
+						+e.input-wrap
+							+e.P.input-title 6. Есть ли у вас предложения по мерам поддержки в сфере аппаратной части (характеристики GPU, возможно TPU, кластеры)?
+							+input('Введите ваш вариант', 'textarea')
+						button.btn(type="submit") Завершить опрос
+
+	// end sQwiz

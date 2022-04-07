@@ -1,0 +1,103 @@
+// start .sQwiz
+.sQwiz {
+	--sPT: #{rem(43.200)};
+	--sPB: #{rem(94.800)};
+	// --sTPB: #{rem()};
+	&__row{
+		// --bs-gutter-x: #{rem()};
+		// --bs-gutter-y: #{rem()};
+
+	}
+	.section-title{
+		
+	}
+	&__col{
+
+	}
+	&__item{
+
+	}
+	&__back {
+		margin-bottom: rem(37.657);
+		display: inline-block;
+		.icon {
+			@include mt;
+			stroke: $black;
+			font-size: rem(16);
+		}
+		&:hover {
+			.icon {
+				stroke: $primary;
+			}
+		}
+	}
+	h1 {
+		margin-bottom: rem(32.600);
+		color: $blue;
+	}
+	.form-wrap {
+		&__input-wrap {
+			background-color: transparent;
+			padding-left: 0;
+			padding: rem(9.600) 0;
+			&:last-of-type {
+				margin-bottom: 4px;
+			}
+		}
+		&__input-title {
+			@extend .h5;
+			display: inline-block;
+			margin-bottom: rem(18);
+			margin-left: 0;
+			line-height: 1.40em;
+		}
+		&__wrap {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.custom-input {
+			margin-bottom: rem(17.600);
+			&__input:checked[type=radio] {
+				background-image: url(../img/@2x/radio-check.png);
+				background-color: $white;
+				font-size: rem(16);
+			}
+			&__input:checked[type=checkbox] {
+				background-image: url(../img/@2x/check-note.png);
+				background-color: #2F32DC;
+				font-size: rem(16);
+			}
+		}
+		&__input {
+			background-color: $gray-400;
+			border-radius: 4px;
+			padding: rem(16);
+			height: rem(99);
+		}
+		button {
+			background-color: $red;
+			font-weight: 600;
+			font-size: rem(18);
+			color: $white;
+			padding: rem(14.300) rem(30.560);
+			border-radius: 8px;
+			letter-spacing: 0.04em;
+		}
+	}
+	.form-check-input {
+		border-color: #2F32DC;
+		width: 24px;
+		height: 24px;
+		margin-top: 0;
+
+	}
+	
+	@include media-breakpoint-up(xl) {}
+	@include media-breakpoint-up(lg) {}
+	@include media-breakpoint-up(md) {}
+	@include media-breakpoint-up(sm) {}
+	@include media-breakpoint-between(md, xl) {}
+	@include media-breakpoint-only(xl) {}
+	@include media-breakpoint-down(xl) {}
+} // end.sQwiz
