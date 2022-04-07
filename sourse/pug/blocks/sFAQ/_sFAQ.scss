@@ -54,7 +54,7 @@
 			background-color: $white;
 			box-shadow: 0px 4px 41px rgba(207, 221, 233, 0.74);
 			border-radius: 8px;
-			padding: rem(45.200) rem(33) rem(26) rem(34);
+			padding: rem(45) rem(33) rem(38.600) rem(34);
 			position: relative;
 			&::after, &::before {
 				@include mt;
@@ -118,6 +118,35 @@
 	.faq-footer {
 		padding-top: rem(70);
 		padding-bottom: rem(125);
+		position: relative;
+		h3 {
+			margin-bottom: rem(64);
+		}
+		&__slider {
+			overflow: visible;
+			&::before, &::after {
+				content: "";
+				display: block;
+				height: 112%;
+				position: absolute;
+				width: 100%;
+				z-index: 10;
+				background-color: $white;
+				top: -9%;
+			}
+			&::after {
+				right: -102%;
+			}
+			&::before {
+				left: -102%;
+			}
+		}
+		.swiper-button-hand {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			background-color: transparent;
+		}
 		&__slide {
 			display: flex;
 			flex-direction: column;
@@ -138,7 +167,21 @@
 			img {
 				margin-right: auto;
 				margin-left: auto;
+				margin-bottom: rem(64.6);
 			}
+			a {
+				width: 100%;
+				background: rgba(175, 217, 255, 0.3);
+				border-radius: 8px;
+				text-align: center;
+				font-size: rem(18);
+				font-weight: 600;
+				letter-spacing: 0.04em;
+				padding: rem(15.5);
+			}
+		}
+		.swiper-pagination {
+			margin-top: rem(64);
 		}
 	}
 	@include media-breakpoint-up(xl) {}
