@@ -4,6 +4,7 @@
 	padding-bottom: rem(20.400);
 	border-bottom: 1px solid $gray-500;
 	&__row {
+		align-items: center;
 		--bs-gutter-x: #{rem(28.48)};
 		--bs-gutter-y: #{rem(20)};
 	}
