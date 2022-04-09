@@ -10,7 +10,8 @@ mixin sAntiSanctionsMeasures(data)
 						+e.item
 							span(style=`--cardColor: ${cardColor}; --cardBg: ${cardBg}`)!= span
 							h6!= title
-							+img(`${img}`, 'bg')
+							+e.img-wrap
+								+img(`${img}`)
 							a(href="#") Подробнее
 				+cardItem('Меры поддержки', 'Меры поддержки малых и&nbsp;средних предприятий', 'antiSanctions-img-1.png', '#18B76A', '#9EF0C9')
 				+cardItem('Разработчики', 'Меры поддержки разработчиков', 'antiSanctions-img-2.png', '#B78818', '#F0D89E')

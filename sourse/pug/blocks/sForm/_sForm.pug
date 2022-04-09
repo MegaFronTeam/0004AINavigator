@@ -5,15 +5,25 @@ mixin sForm()
 			+e.wrap
 				h2 Есть идея по&nbsp;развитию российского&nbsp;ИИ
 				+form-wrap
-					+input('Введите', 'text', 'Имя')
-					+input('Введите', 'text', 'Фамилия')
-					+input('Введите', 'text', 'Должность')
-					+input('Введите', 'text', 'Организация')
-					+input('Введите', 'tel', 'Телефон')
-					+input('Введите', 'email', 'E-mail')
-					+input('Введите', 'text', 'Город')
-					+input('Введите', 'text', 'Тема ')
-					+input('Введите', 'textarea', 'Ваше сообщение')
+					.row
+						.col-lg-3
+							+input('Введите', 'text', 'Имя')
+						.col-lg-3
+							+input('Введите', 'text', 'Фамилия')
+						.col-lg-3
+							+input('Введите', 'text', 'Должность')
+						.col-lg-3
+							+input('Введите', 'text', 'Организация')
+						.col-lg-3
+							+input('Введите', 'tel', 'Телефон')
+						.col-lg-3
+							+input('Введите', 'email', 'E-mail')
+						.col-lg-3
+							+input('Введите', 'text', 'Город')
+						.col-lg-9
+							+input('Введите', 'text', 'Тема ')
+						.col-lg-9
+							+input('Введите', 'textarea', 'Ваше сообщение')
 					+e.submit-wrap
 						button.btn(type="submit") Отправить
 						+policy()

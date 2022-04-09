@@ -3,10 +3,10 @@ mixin topLine()
 	+b.topLine.section#topLine&attributes(attributes)
 		.container
 			+e.row.row
-				+e.col-logo.col-md-6.col-lg-auto
+				+e.col-logo.col-sm-6.col-lg-auto
 					a(href="#") 
 						+img('logo.png')
-				.col-md-6.col-lg-auto
+				.col-sm-6.col-lg
 					+b.support
 						span Меры поддержки
 						+e.wrap
@@ -14,7 +14,7 @@ mixin topLine()
 							a(href="#") Меры поддержки разработчиков
 							a(href="#") Меры по&nbsp;внедрению ИИ-технологий
 							a(href="#") Образовательные меры поддержки
-				.col-12.col-lg-auto
+				.col-lg-auto
 					+governmentList()
 					//- +b.UL.government
 					//- 	li 

@@ -11,23 +11,23 @@ mixin headerBlock()
 							+img('survey.png')
 							h4 Опрос
 						p Необходимые меры поддержки доступности вычислительных ресурсов для&nbsp;ИИ
-						button.btn Пройти
-			ul
+						a.btn Пройти
+			+e.row-list.row
 				mixin list-item(num, text, numColor)
-					li
+					.col-auto
 						span(style=`--numColor: ${numColor}`)!= num
 						+e.P.text!= text
 				+list-item('300', 'команд разработчиков в сфере&nbsp;ИИ получили государственную поддержку', '#204990')
 				+list-item('40+', 'исследовательских проектов запущено в&nbsp;сфере&nbsp;ИИ', '#204990')
 				+list-item('50', 'образовательных программ в&nbsp;сфере&nbsp;ИИ реализовано', '#FF5C00')
 				+list-item('7000+', 'бюджетных мест по&nbsp;ИИ-специальностям открыто в&nbsp;российских университетах', '#FF5C00')
-				li
+				.col-auto
 					+e.P.num(style=`--numColor: #18B76A`) 8,7
 						span млрд. ₽
 					+e.P.text бюджет Федерального проекта &laquo;Искусственный интеллект&raquo; на&nbsp;2022&nbsp;г
 			+e.linkWrap
-				a(href="#")
+				+e.tg-link(href="#")
 					+icon('telegram-stroke')
 					| Подробнее в телеграм канале
-				button Предложить меру
+				+e.btn(href="#") Предложить меру
 	// end headerBlock

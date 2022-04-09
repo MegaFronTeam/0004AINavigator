@@ -16,8 +16,9 @@
 	.support {
 		// margin-right: rem(25);
 		position: relative;
+		text-align: right;
 		@include media-breakpoint-up(lg) {
-			margin-left: rem(143.8);
+			// margin-left: rem(143.8);
 		}
 		&:hover {
 			--sub-mnu-scale: 1;
@@ -29,12 +30,12 @@
 			font-size: rem(18);
 			font-weight: 700;
 			border-radius: rem(8);
-			display: block;
+			display: inline-block;
 			letter-spacing: 0.04em;
-			width: max-content;
+			// width: max-content;
 			@include media-breakpoint-down(md) {
-				margin-left: auto;
-				margin-right: auto;
+				width: 100%;
+				text-align: center;
 			}
 		}
 		&__wrap {
@@ -50,8 +51,12 @@
 			z-index: 10;
 			box-shadow: 0px 4px 41px rgba(207, 221, 233, 0.74);
 			text-align: center;
+			// left: -30%;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
 			@include media-breakpoint-up(lg) {
-				left: -50%;
+				// left: -30%;
 				width: max-content;
 				text-align: left;
 			}
@@ -77,6 +82,12 @@
 			// }
 		}
 	}
+	.government {
+		display: none;
+		@include media-breakpoint-up(lg) {
+			display: flex;
+		}
+	}
 	&__soc-wrap {
 		display: flex;
 		align-items: center;
@@ -94,6 +105,10 @@
 	&__col {
 		margin-left: auto;
 		margin-right: auto;
+		display: none;
+		@include media-breakpoint-up(xxl) {
+			display: block;
+		}
 	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}

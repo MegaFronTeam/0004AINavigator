@@ -20,7 +20,8 @@
 	&__col{
 
 	}
-	&__item{
+	&__item {
+		@include mt;
 		box-shadow: 0px 4px 41px rgba(207, 221, 233, 0.74);
 		border-radius: 8px;
 		padding: rem(17.6) rem(16) rem(19.2) rem(16);
@@ -28,6 +29,9 @@
     flex-direction: column;
     align-items: flex-start;
     height: 100%;
+		&:hover {
+			box-shadow: 0 4px 7px rgb(207 221 233 / 74%);
+		}
 		span {
 			color: var(--cardColor);
 			background: var(--cardBg);
@@ -44,7 +48,8 @@
 			margin-bottom: 0;
 		}
 		img {
-			margin-bottom: rem(8);
+			// margin-bottom: rem(8);
+			width: 100%;
 		}
 		a {
 			display: block;
@@ -56,6 +61,7 @@
 			font-weight: 600;
 			padding: rem(12.5) rem(10) rem(13.926);
 			letter-spacing: 0.04em;
+			margin-top: auto;
 			&:hover {
 				background-color: rgba(175, 217, 255, 1);
 			}
