@@ -24,28 +24,28 @@
 	&__item{
 
 	}
-	.swiper-pagination-bullet {
-		position: relative;
-		&:before {
-			@include mt;
-			content: '';
-			position: absolute;
-			width: rem(13);
-			height: rem(13);
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-			border-radius: 50%;
-			background-color: transparent;
-		}
-		&-active, &:hover {
-			&:before {
+	// .swiper-pagination-bullet {
+	// 	position: relative;
+	// 	&:before {
+	// 		@include mt;
+	// 		content: '';
+	// 		position: absolute;
+	// 		width: rem(13);
+	// 		height: rem(13);
+	// 		left: 50%;
+	// 		top: 50%;
+	// 		transform: translate(-50%, -50%);
+	// 		border-radius: 50%;
+	// 		background-color: transparent;
+	// 	}
+	// 	&-active, &:hover {
+	// 		&:before {
 
-				background-color: #FF5C00 ;
-			}
+	// 			background-color: #FF5C00 ;
+	// 		}
 
-		}
-	}
+	// 	}
+	// }
 	&__img-wrap {
 		position: relative;
 		padding-top: rem(76);

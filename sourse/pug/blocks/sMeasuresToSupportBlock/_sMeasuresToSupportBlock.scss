@@ -1,10 +1,10 @@
 // start .sMeasuresToSupportBlock
 .sMeasuresToSupportBlock {
-	--sPT: #{rem(30)};
+	// --sPT: #{rem(30)};
 	--sPB: #{rem(60)};
 	// --sTPB: #{rem()};
 	@include media-breakpoint-up(lg) {
-		--sPT: #{rem(56)};
+		// --sPT: #{rem(56)};
 		--sPB: #{rem(120)};
 	}
 	&__row{
@@ -60,12 +60,12 @@
 			}
 		}
 	}
-	h1 {
-		line-height: 1.20em;
-		color: #204991;
-		margin-bottom: rem(61);
-		line-height: 1.20em;
-	}
+	// h1 {
+	// 	line-height: 1.20em;
+	// 	color: #204991;
+	// 	margin-bottom: rem(61);
+	// 	line-height: 1.20em;
+	// }
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

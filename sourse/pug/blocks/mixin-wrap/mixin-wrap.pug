@@ -39,3 +39,18 @@ mixin governmentList()
 			+img('top-nav-3.png')
 		li 
 			+img('top-nav-4.png')
+
+mixin page-head(title, back)
+	+b.page-head
+		.container
+			if back
+				a(href="#")
+					+icon('arrow-left')
+			h1!= title 
+
+mixin faq-slide()
+	+b.faq-slide.swiper-slide
+		span Малые и средние предприятия
+		h5 Заголовок для меры поддержки
+		+img('support-img-1.png')
+		a(href="#") Подробнее

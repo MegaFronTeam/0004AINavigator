@@ -1,15 +1,16 @@
 mixin sSurveyBlock(data)
 	// start sSurveyBlock
 	+b.SECTION.sSurveyBlock.section#sSurveyBlock&attributes(attributes)
+		+page-head('Опросы')
 		.container
-			h1 Опросы
+			//- h1 Опросы
 			+e.row.row
 				mixin surveyItem(i, title)
 					.col-sm-6.col-lg-4
-						+e.wrap
-							+img(`survey-img-${i}.jpg`, 'bg')
-							h5!= title
-							a(href="#") Подробнее
+						+e.A.link-wrap(href="#")
+								+img(`survey-img-${i}.jpg`)
+								h5!= title
+								+e.link Подробнее
 				+surveyItem(1, 'Заголовок для опроса в&nbsp;несколько строк для наглядности полного')
 				+surveyItem(2, 'Заголовок для опроса в&nbsp;несколько строк для наглядности полного')
 				+surveyItem(3, 'Заголовок для опроса в&nbsp;несколько строк для наглядности полного')

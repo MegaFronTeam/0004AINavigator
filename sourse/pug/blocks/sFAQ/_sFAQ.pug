@@ -3,9 +3,9 @@ mixin sFAQ(data)
 	+b.SECTION.sFAQ.section#sFAQ&attributes(attributes)
 		.container
 			+b.faq-head
-				a(href="#")
-					+icon('arrow-left')
-				h1 Меры поддержки малых и&nbsp;средних предприятий
+				//- a(href="#")
+				//- 	+icon('arrow-left')
+				//- h1 Меры поддержки малых и&nbsp;средних предприятий
 				span Малые и средние предприятия
 			+b.accordion
 				+ddGroup()
@@ -36,11 +36,12 @@ mixin sFAQ(data)
 				+e.slider--js.swiper
 					.swiper-wrapper
 						- for(i=0; i<3; i++)
-							+e.slide.swiper-slide
-								span Малые и средние предприятия
-								h5 Заголовок для меры поддержки
-								+img('support-img-1.png')
-								a(href="#") Подробнее
+							+faq-slide()
+							//- +e.slide.swiper-slide
+							//- 	span Малые и средние предприятия
+							//- 	h5 Заголовок для меры поддержки
+							//- 	+img('support-img-1.png')
+							//- 	a(href="#") Подробнее
 					+arrow()
 					.swiper-pagination
 	// end sFAQ

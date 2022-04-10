@@ -67,7 +67,9 @@
 			}
 		}
 	}
-
+	&__img-wrap {
+		width: 100%;
+	}
 	@include media-breakpoint-up(xl) {}
 	@include media-breakpoint-up(lg) {}
 	@include media-breakpoint-up(md) {}

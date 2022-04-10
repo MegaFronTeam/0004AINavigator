@@ -270,10 +270,10 @@ const JSCCommon = {
 							});
 						}
 						else {
-							$(this.parentElement).removeClass('active');
-							$(this.parentElement).find('.dd-content-js').slideUp(function () {
-								$(this).removeClass('active');
-							});
+							// $(this.parentElement).removeClass('active');
+							// $(this.parentElement).find('.dd-content-js').slideUp(function () {
+							// 	$(this).removeClass('active');
+							// });
 						}
 					});
 
